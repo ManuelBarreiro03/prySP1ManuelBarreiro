@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBienvenida));
             this.cmdLogin = new System.Windows.Forms.Button();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -59,8 +60,9 @@
             this.ClientSize = new System.Drawing.Size(303, 163);
             this.Controls.Add(this.lblEmpresa);
             this.Controls.Add(this.cmdLogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBienvenida";
-            this.Text = "frmBienvenida";
+            this.Text = "Sintepart SRL";
             this.ResumeLayout(false);
             this.PerformLayout();
 
