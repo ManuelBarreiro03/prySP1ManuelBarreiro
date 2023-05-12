@@ -73,6 +73,7 @@
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(110, 70);
+            this.txtContraseña.MaxLength = 10;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(121, 22);
             this.txtContraseña.TabIndex = 4;
@@ -82,6 +83,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.Blue;
             this.txtUsuario.Location = new System.Drawing.Point(110, 22);
+            this.txtUsuario.MaxLength = 10;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(121, 22);
             this.txtUsuario.TabIndex = 5;
@@ -93,7 +95,7 @@
             this.cmdAceptar.Name = "cmdAceptar";
             this.cmdAceptar.Size = new System.Drawing.Size(81, 28);
             this.cmdAceptar.TabIndex = 6;
-            this.cmdAceptar.Text = "Aceptar";
+            this.cmdAceptar.Text = "&Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
             // 
             // cmdCacelar
@@ -103,7 +105,7 @@
             this.cmdCacelar.Name = "cmdCacelar";
             this.cmdCacelar.Size = new System.Drawing.Size(81, 28);
             this.cmdCacelar.TabIndex = 7;
-            this.cmdCacelar.Text = "Cacelar";
+            this.cmdCacelar.Text = "&Cacelar";
             this.cmdCacelar.UseVisualStyleBackColor = true;
             // 
             // lstModulo
@@ -135,6 +137,7 @@
             this.Controls.Add(this.lblUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
