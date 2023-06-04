@@ -35,8 +35,6 @@ namespace prySP1ManuelBarreiro
                 txtContraseña.Text = txtContraseña.Text.Substring(0, 10);
                 txtContraseña.SelectionStart = 10;
             }
-            
-
         }
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
@@ -107,13 +105,9 @@ namespace prySP1ManuelBarreiro
             }
 
             if (varUsuario != "God" ||  varModulo != "Ceci" ||  varModulo != "John" || varUsuario != "Adm")
-                {
+            {
                 MessageBox.Show("Usuario no registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-
-
-
+            }
         }
     }
 }
