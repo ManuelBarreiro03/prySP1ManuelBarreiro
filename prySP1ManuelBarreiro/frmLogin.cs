@@ -98,7 +98,7 @@ namespace prySP1ManuelBarreiro
                     varErrores++;
                     MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            if (varUsuario != "God" ||  varModulo != "Ceci" ||  varModulo != "John" || varUsuario != "Adm" && (varModulo == "SIST" || varModulo == "ADM" || varModulo == "COM" || varModulo == "VTA"))
+            if (varUsuario != "God" ||  varModulo != "Ceci" ||  varModulo != "John" || varUsuario != "Adm")
             {
                 varErrores++;
                 MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
