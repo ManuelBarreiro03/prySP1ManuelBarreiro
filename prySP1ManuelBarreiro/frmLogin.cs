@@ -35,7 +35,7 @@ namespace prySP1ManuelBarreiro
                 txtContraseña.Text = txtContraseña.Text.Substring(0, 10);
                 txtContraseña.SelectionStart = 10;
             }
-            //txtContraseña.Text = new string('#', txtContraseña.Text.Length);
+            
 
         }
         private void cmdAceptar_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace prySP1ManuelBarreiro
                 }
                 else
                 {
-                    MessageBox.Show("Contraseña y/o modulo incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     varErrores++;
 
                 }
@@ -71,7 +71,7 @@ namespace prySP1ManuelBarreiro
                 else
                 {
                     varErrores++;
-                    MessageBox.Show("Contraseña y/o modulo incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             if (varUsuario == "Ceci")
@@ -85,7 +85,7 @@ namespace prySP1ManuelBarreiro
                 else
                 {
                     varErrores++;
-                    MessageBox.Show("Contraseña y/o modulo incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             if (varUsuario == "God")
@@ -98,13 +98,19 @@ namespace prySP1ManuelBarreiro
                 else
                 {
                     varErrores++;
-                    MessageBox.Show("Contraseña y/o modulo incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             if (varErrores == 2)
             {
-                MessageBox.Show("Demasiados intentos, se cerrará el Inicio de Sesion");
+                MessageBox.Show("Demasiados intentos, prube de vuelta en unos minutos");
                 this.Close();
             }
+
+            if (varUsuario != "God" ||  varModulo != "Ceci" ||  varModulo != "John" || varUsuario != "Adm")
+                {
+                MessageBox.Show("Usuario no registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
 
 
 
