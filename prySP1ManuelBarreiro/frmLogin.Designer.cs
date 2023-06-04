@@ -77,6 +77,7 @@
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(121, 22);
             this.txtContraseña.TabIndex = 4;
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // txtUsuario
             // 
@@ -91,22 +92,24 @@
             // cmdAceptar
             // 
             this.cmdAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAceptar.Location = new System.Drawing.Point(268, 22);
+            this.cmdAceptar.Location = new System.Drawing.Point(258, 40);
             this.cmdAceptar.Name = "cmdAceptar";
             this.cmdAceptar.Size = new System.Drawing.Size(81, 28);
             this.cmdAceptar.TabIndex = 6;
             this.cmdAceptar.Text = "&Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
+            this.cmdAceptar.Click += new System.EventHandler(this.cmdAceptar_Click);
             // 
             // cmdCacelar
             // 
             this.cmdCacelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCacelar.Location = new System.Drawing.Point(268, 81);
+            this.cmdCacelar.Location = new System.Drawing.Point(258, 105);
             this.cmdCacelar.Name = "cmdCacelar";
             this.cmdCacelar.Size = new System.Drawing.Size(81, 28);
             this.cmdCacelar.TabIndex = 7;
             this.cmdCacelar.Text = "&Cacelar";
             this.cmdCacelar.UseVisualStyleBackColor = true;
+            this.cmdCacelar.Click += new System.EventHandler(this.cmdCacelar_Click);
             // 
             // lstModulo
             // 
@@ -126,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 188);
+            this.ClientSize = new System.Drawing.Size(347, 152);
             this.Controls.Add(this.lstModulo);
             this.Controls.Add(this.cmdCacelar);
             this.Controls.Add(this.cmdAceptar);
